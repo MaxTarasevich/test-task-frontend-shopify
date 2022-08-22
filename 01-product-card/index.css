@@ -27,7 +27,6 @@ body,h1,h2,p{
 /*Utility class for shadow*/
 
 .shadow{
-    background: #C4C4C4;
     box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
 }
 
@@ -59,7 +58,7 @@ body{
 }
 
 .card{
-    max-width: 380px;
+    max-width: 23.75rem;
     display: flex;
     flex-direction: column;
     border-radius: 12px;
