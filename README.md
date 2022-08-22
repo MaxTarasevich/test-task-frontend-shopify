@@ -2,7 +2,7 @@
 По ссылкам ниже можно просмотреть выполненые тестовые задания:
 1. [01-product-card](https://maxtarasevich.github.io/test-task-frontend-shopify/01-product-card/index.html)
 2. [02-collapse](https://maxtarasevich.github.io/test-task-frontend-shopify/02-collapse/index.html)
-3. {03-fix-problems](https://maxtarasevich.github.io/test-task-frontend-shopify/03-fix-problems/index.html)
+3. [03-fix-problems](https://maxtarasevich.github.io/test-task-frontend-shopify/03-fix-problems/index.html)
 
 ## Как попасть на курс?
 1. Тестовое задание состоит из 3-х частей. Выполните все три. Подробности к каждой части вы найдёте в соответствующей папке: ```01-product-card```, ```02-collapse```, ```03-fix-problems```.
