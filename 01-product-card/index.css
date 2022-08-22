@@ -1,1 +1,146 @@
 /* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+
+/*Reset*/
+
+*{
+    box-sizing: border-box;
+}
+
+body,h1,h2,p{
+    margin: 0;
+    padding: 0;
+}
+
+/*Colors*/
+
+:root{
+    --main-bg:#E5E5E5;
+    --white:#FFFFFF;
+    --mine-shaft:#2F2F2F;
+    --la-palma:#42940F;
+    --tundora:#4E4E4E;
+    --verdun-green:#1F5200;
+    --classic-rose:#FDCFF3;
+    --golden-tainoi:#FFCF56;
+}
+
+/*Utility class for shadow*/
+
+.shadow{
+    box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+}
+
+/*Styles*/
+
+body{
+    background-color: var(--main-bg);
+    font-family: 'Arial';
+    padding-bottom: 5%;
+}
+
+.title{
+    margin: 40px 0;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wrapper{
+    max-width: 1280px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card{
+    max-width: 23.75rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--white);
+    color: var(--mine-shaft);
+}
+
+.card__image{
+    position: relative;
+    height: 214px;
+}
+
+.card__info{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
+    padding: 16px;
+}
+.card__prompt{
+    padding: 0em 1em;
+    border-radius: 8px;
+    background-color: var(--white);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.card__prompt_rose{
+    background-color: var(--classic-rose);
+}
+
+.card__prompt_golden{
+    background-color: var(--golden-tainoi);
+}
+
+.card__title{
+    padding:1em 1em 0em;
+    margin-bottom: 16px;
+    font-weight: 900;
+    font-size: 1.5rem;
+    overflow-wrap: break-word;
+}
+
+.card__text{
+    flex-grow: 1;
+    padding:0 1.5em 1.5em;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.card__btn{
+    width: calc(100% - 48px);
+    margin: 0 auto 1.33em;
+    padding: 0.66em 0;
+    background-color: var(--white);
+    color: var(--la-palma);
+    font-weight: 900;
+    font-size: 1.125rem;
+    border: 1px solid var(--la-palma);
+    border-radius: 8px;
+    cursor: pointer;
+    transition:all 0.4s ease-in;
+}
+
+.card__btn:hover{
+    background-color: var(--la-palma);
+    color: var(--white);
+}
+
+.card__btn:active{
+    background-color: var(--verdun-green);
+    color: var(--white);
+}
+
+.card__btn_disabled{
+    background-color: var(--tundora);
+    border: 1px solid var(--tundora);
+    color: var(--white);
+    pointer-events: none;
+}
